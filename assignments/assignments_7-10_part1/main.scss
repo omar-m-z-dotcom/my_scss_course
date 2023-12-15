@@ -1,0 +1,48 @@
+$main: "school";
+$child: "box";
+$language: "ar"; // Arabic
+$gap: 20px;
+
+.#{$main} {
+    padding: $gap;
+    direction: if($language =="en", ltr, rtl);
+    margin-left: $gap;
+
+    & .#{$main}-#{$child} {
+        padding: $gap / 2;
+    }
+
+    &:hover .#{$main}-#{$child} {
+        background-color: #eee;
+    }
+}
+
+// // english Output
+// .school {
+//     padding: 20px;
+//     direction: ltr;
+//     margin-left: 20px;
+// }
+
+// .school .school-box {
+//     padding: 10px;
+// }
+
+// .school:hover .school-box {
+//     background-color: #eee;
+// }
+
+// // arabic Output
+// .school {
+//     padding: 20px;
+//     direction: rtl;
+//     margin-right: 20px;
+// }
+
+// .school .school-box {
+//     padding: 10px;
+// }
+
+// .school:hover .school-box {
+//     background-color: #eee;
+// }

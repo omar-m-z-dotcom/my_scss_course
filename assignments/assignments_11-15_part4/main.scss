@@ -1,0 +1,54 @@
+$init: 1;
+
+// with @while
+// @while $init <=5 {
+//     .circle-#{$init * 100} {
+//         width: $init * 100px;
+//         height: $init * 100px;
+//         border-radius: $init * 50px;
+//     }
+
+//     $init: $init + 1;
+// }
+
+// with @for
+@for $i from $init through 5 {
+    .circle-#{$i * 100} {
+        width: $i * 100px;
+        height: $i * 100px;
+        border-radius: $i * 50px;
+    }
+}
+
+
+// Output
+
+// .circle-100 {
+//     width: 100px;
+//     height: 100px;
+//     border-radius: 50px;
+// }
+
+// .circle-200 {
+//     width: 200px;
+//     height: 200px;
+//     border-radius: 100px;
+// }
+
+// .circle-300 {
+//     width: 300px;
+//     height: 300px;
+//     border-radius: 150px;
+// }
+
+// .circle-400 {
+//     width: 400px;
+//     height: 400px;
+//     border-radius: 200px;
+// }
+
+// .circle-500 {
+//     width: 500px;
+//     height: 500px;
+//     border-radius: 250px;
+// }

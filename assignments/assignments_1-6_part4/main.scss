@@ -1,0 +1,12 @@
+.parent {
+    & + .sibling {
+        margin: auto {
+            top: 10px;
+        }
+
+        // ~ is the general sibling selector
+        & ~ .last {
+            padding: 10px;
+        }
+    }
+}

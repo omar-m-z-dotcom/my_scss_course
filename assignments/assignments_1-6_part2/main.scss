@@ -1,0 +1,27 @@
+// method 1
+.class > .child {
+    padding: 10px;
+}
+
+// method 2
+.class {
+    > .child {
+        padding: 10px;
+    }
+}
+
+// method 3
+.class {
+    & > .child {
+        padding: 10px;
+    }
+}
+
+// method 4
+.class {
+    > {
+        .child {
+            padding: 10px;
+        }
+    }
+}

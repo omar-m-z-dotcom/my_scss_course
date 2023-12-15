@@ -1,0 +1,24 @@
+.box-100 {
+  width: 200 px;
+  height: 200 px;
+}
+
+.box-200 {
+  width: 400 px;
+  height: 800 px;
+}
+
+.box-400 {
+  width: 800 px;
+  height: 2400 px;
+}
+
+.box-800 {
+  width: 1600 px;
+  height: 6400 px;
+}
+
+.box-1600 {
+  width: 3200 px;
+  height: 16000 px;
+}/*# sourceMappingURL=main.css.map */

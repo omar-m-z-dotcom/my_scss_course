@@ -1,0 +1,21 @@
+// SASS Code with unknown number of arguments
+@function get-total($numbers...) {
+    $total: 0;
+
+    @each $number in $numbers {
+        $total: $total + $number;
+    }
+
+    @return $total;
+}
+
+.box {
+    top: get-total(100, 50, 20);
+    right: get-total(100, 50);
+}
+
+// Output
+// .box {
+//     top: 170;
+//     right: 150;
+// }

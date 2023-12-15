@@ -1,0 +1,25 @@
+.arrow-div {
+  background-color: white;
+  padding: 15px;
+  border: 1px solid #ccc;
+}
+
+.arrow-div {
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 300px;
+  position: relative;
+  margin: 50px auto;
+}
+.arrow-div::before {
+  content: "";
+  position: absolute;
+  border: 20px solid transparent;
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-bottom-color: red;
+}/*# sourceMappingURL=main.css.map */

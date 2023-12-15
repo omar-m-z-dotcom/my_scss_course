@@ -1,0 +1,37 @@
+// Import Global Rules
+@use "./scss/layout/global-rules";
+
+// Import Pages
+@use "./scss/pages/contact";
+
+// Import Variables
+@use "./scss/variables/colors";
+
+// Global Variable
+$alt_color: green;
+
+.header {
+    color: $alt_color;
+}
+
+.footer {
+    $alt_color: black !global;
+    background-color: $alt_color;
+}
+
+.copyright {
+    background-color: $alt_color;
+}
+
+.sidebar {
+    background-color: colors.$main;
+    color: colors.$alt;
+}
+
+$max_mobile: "max-width: 767px";
+
+@media ($max_mobile) {
+    .sidebar {
+        padding: 20px;
+    }
+}

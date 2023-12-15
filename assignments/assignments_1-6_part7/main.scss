@@ -1,0 +1,31 @@
+.box {
+    h2 {
+        font-size: 20px;
+    }
+
+    p {
+        @extend h2;
+    }
+}
+
+$media: 575px;
+
+@media (max-width: $media) {
+    .box {
+        h2 {
+            font-size: 16px;
+
+            span {
+                font-weight: bold;
+            }
+        }
+
+        p {
+            @extend h2;
+
+            span {
+                @extend span;
+            }
+        }
+    }
+}

@@ -1,0 +1,88 @@
+.red-theme .product {
+  background-color: white;
+  border-bottom: 2px solid red;
+}
+.red-theme .product .title {
+  color: red;
+  font-weight: bold;
+}
+
+.green-theme .product {
+  background-color: white;
+  border-bottom: 2px solid green;
+}
+.green-theme .product .title {
+  color: green;
+  font-weight: bold;
+}
+
+.blue-theme .product {
+  background-color: white;
+  border-bottom: 2px solid blue;
+}
+.blue-theme .product .title {
+  color: blue;
+  font-weight: bold;
+}
+
+.orange-theme .product {
+  background-color: white;
+  border-bottom: 2px solid orange;
+}
+.orange-theme .product .title {
+  color: orange;
+  font-weight: bold;
+}
+
+.facebook {
+  background-color: blue;
+  color: white;
+}
+.facebook::before {
+  content: "facebook";
+}
+
+.youtube {
+  background-color: red;
+  color: white;
+}
+.youtube::before {
+  content: "youtube";
+}
+
+.github {
+  background-color: black;
+  color: white;
+}
+.github::before {
+  content: "github";
+}
+
+.twitter {
+  background-color: indianred;
+  color: white;
+}
+.twitter::before {
+  content: "twitter";
+}
+
+.one {
+  font-size: 20px;
+  background-color: red;
+  color: white;
+  padding: 10px;
+}
+
+.two {
+  font-size: 15px;
+  background-color: green;
+  color: white;
+  padding: 7.5px;
+}
+
+.three {
+  font-size: 22px;
+  background-color: blue;
+  color: white;
+  padding: 11px;
+}/*# sourceMappingURL=main.css.map */

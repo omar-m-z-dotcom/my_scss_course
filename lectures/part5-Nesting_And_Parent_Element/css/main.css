@@ -1,0 +1,70 @@
+.parent {
+  font-weight: bold;
+}
+.parent .child {
+  font-size: 20px;
+}
+.parent .child .grand-child {
+  font-size: 15px;
+}
+
+.parent-one,
+.parent-two {
+  padding: 20px;
+}
+.parent-one .child,
+.parent-two .child {
+  padding: 10px;
+}
+
+.parent > .child {
+  font-size: 20px;
+}
+.parent > .test {
+  font-weight: bold;
+}
+
+.parent > .child {
+  font-size: 20px;
+}
+.parent .test {
+  font-weight: bold;
+}
+.parent + p {
+  font-size: 15px;
+}
+
+.parent > .element-one {
+  font-size: 10px;
+}
+.parent > .element-two {
+  font-size: 10px;
+}
+.parent .not-direct-child {
+  font-weight: bold;
+}
+
+.box .title {
+  font-size: 10px;
+}
+.box .description {
+  font-size: 8px;
+}
+.box.red {
+  color: red;
+}
+.box.green {
+  color: green;
+}
+.box:hover {
+  background-color: #eee;
+}
+.box:hover .title {
+  font-weight: bold;
+}
+:not(.box) {
+  font-weight: normal;
+}
+[dir=rtl] .box {
+  direction: rtl;
+}/*# sourceMappingURL=main.css.map */

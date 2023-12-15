@@ -1,0 +1,9 @@
+@use "./scss/helpers/functions" as *;
+
+$width: 200px;
+
+.element {
+    width: $width;
+    height: half($width);
+    top: calculate(100px, 200px, 50px);
+}
